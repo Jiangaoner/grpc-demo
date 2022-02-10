@@ -166,7 +166,7 @@ type UnimplementedGreeterServer struct {
 }
 
 func (*UnimplementedGreeterServer) SayHello(ctx context.Context, req *HelloRequest) (*HelloReply, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method SayHello not implemented")
+	return nil, status.Errorf(codes.Unimplemented, "method sayhello not implemented")
 }
 
 func RegisterGreeterServer(s *grpc.Server, srv GreeterServer) {
